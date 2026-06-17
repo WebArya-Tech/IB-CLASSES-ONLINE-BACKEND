@@ -2,13 +2,13 @@ version: '3.8'
 
 services:
   # ==============================
-  # Testimonial & QnA Application Service
+  # IB Classes Application Service
   # ==============================
-  testimonial-qna-api:
+  ib-classes-api:
     build: .
-    container_name: astar-testimonial-ask-api-container
+    container_name: ib-classes-api-container
     ports:
-      - "9009:8080" # Host Port : Container Port
+      - "9998:8080" # Host Port : Container Port
     restart: always
     environment:
       # Server Configuration
